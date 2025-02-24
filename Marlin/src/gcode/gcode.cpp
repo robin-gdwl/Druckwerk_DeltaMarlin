@@ -744,6 +744,8 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
       #endif
 
       #if HAS_BUZZER
+        // TODO Robin:: Why does this break the build? 
+        // https://github.com/MarlinFirmware/Marlin/issues/27187
         //case 300: M300(); break;                                  // M300: Play beep tone
       #endif
 
